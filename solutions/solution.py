@@ -1,6 +1,7 @@
 import fileinput
+from abc import ABC, abstractmethod
 
-class Solution:
+class Solution(ABC):
 
     path = "C:\\Users\\siste\\OneDrive\\Desktop\\smont\\advent-of-code\\inputs\\day{}.txt"
 
@@ -9,9 +10,11 @@ class Solution:
         self.lines = [line.replace("\n", "") for line
                       in fileinput.input(self.path.format(dayNumber))]
 
+    @abstractmethod
     def part1(self):
         pass
 
+    @abstractmethod
     def part2(self):
         pass
 

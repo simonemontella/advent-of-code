@@ -2,9 +2,10 @@ from solutions.solution import Solution
 
 class Day1(Solution):
 
+    calories = []
+
     def __init__(self):
         super().__init__(1)
-        self.calories  = []
 
     def part1(self):
         maxCalories = 0
