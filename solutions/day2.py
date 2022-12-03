@@ -27,17 +27,17 @@ class Day2(Solution):
             
     def calc_move(self, opponent, strategy):
         if(strategy == "X"): #LOSS
-            return globals()[self.move(opponent).wins]
+            return globals()[self.get_move(opponent).wins]
         elif(strategy == "Y"): #DRAW
-            return self.move(opponent)
+            return self.get_move(opponent)
         elif(strategy == "Z"): #WIN
-            return globals()[self.move(opponent).loss]
+            return globals()[self.get_move(opponent).loses]
         else: return None
 
     def play(self, opponent, own):
-        opponent = self.move(opponent)
+        opponent = self.get_move(opponent)
         if(type(own) == str):
-            own = self.move(own)
+            own = self.get_move(own)
 
         score = own.score
         if(opponent.__name__ == own.__name__):
@@ -49,7 +49,7 @@ class Day2(Solution):
 
         return score
 
-    def move(self, move: str):
+    def get_move(self, move: str):
         if(move in Rock.aliases):
             return Rock
         elif(move in Paper.aliases):
@@ -64,18 +64,18 @@ class Rock:
     aliases = ['A', 'X']
     score = 1
     wins = 'Scissors'
-    loss = 'Paper'
+    loses = 'Paper'
 
 class Paper:
 
     aliases = ['B', 'Y']
     score = 2
     wins = 'Rock'
-    loss = 'Scissors'
+    loses = 'Scissors'
 
 class Scissors:
 
     aliases = ['C', 'Z']
     score = 3
     wins = 'Paper'
-    loss = 'Rock'
+    loses = 'Rock'
