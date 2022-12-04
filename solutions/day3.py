@@ -3,7 +3,7 @@ from solutions.solution import Solution
 class Day3(Solution):
 
     def __init__(self):
-        super().__init__(3)
+        super().__init__(3, "Rucksack Reorganization")
 
     def part1(self):
         items = []

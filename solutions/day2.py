@@ -7,20 +7,18 @@ class Day2(Solution):
     loss = 0
 
     def __init__(self):
-        super().__init__(2)
+        super().__init__(2, "Rock Paper Scissors")
 
     def part1(self):
         score = 0
-        for move in self.lines:
-            moves = move.split(" ")
+        for moves in [move.split(" ") for move in self.lines]:
             score += self.play(moves[0], moves[1])
         
         return score
 
     def part2(self):
         score = 0
-        for move in self.lines:
-            moves = move.split(" ")
+        for moves in [move.split(" ") for move in self.lines]:
             score += self.play(moves[0], self.calc_move(moves[0], moves[1]))
 
         return score
@@ -56,8 +54,7 @@ class Day2(Solution):
             return Paper
         elif(move in Scissors.aliases):
             return Scissors
-        else:
-            return None
+        else: return None
 
 class Rock:
 

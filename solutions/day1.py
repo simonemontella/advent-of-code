@@ -5,7 +5,7 @@ class Day1(Solution):
     calories = []
 
     def __init__(self):
-        super().__init__(1)
+        super().__init__(1, "Calorie Counting")
 
     def part1(self):
         maxCalories = 0
