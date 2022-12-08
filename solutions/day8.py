@@ -12,7 +12,11 @@ class Day8(Solution):
 
         self.center = {pos: val for pos, val in self.map.items() if pos[0] in range(1, self.x_lenght) and pos[1] in range(1, self.y_lenght)}
         
+<<<<<<< HEAD
     def part1(self):
+=======
+    def part2(self):
+>>>>>>> parent of 070bc19 (Revert "day7, day 8 solved")
         visibles = len(self.map) - len(self.center)
         for pos, tree in self.center.items():
             x, y = pos[0], pos[1]
@@ -24,7 +28,11 @@ class Day8(Solution):
 
         return visibles
 
+<<<<<<< HEAD
     def part2(self):
+=======
+    def part1(self):
+>>>>>>> parent of 070bc19 (Revert "day7, day 8 solved")
         highest_score = 0
         for pos, tree in self.center.items():
             x, y = pos[0], pos[1]
