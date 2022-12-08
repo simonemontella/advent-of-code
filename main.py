@@ -7,8 +7,7 @@ def days():
 
     for file in os.listdir(path):
         if(file.startswith("day")):
-            classes.insert(int(re.findall(r'\d+', file)
-                           [0])-1, str(file.replace(".py", "")))
+            classes.insert(int(re.findall(r'\d+', file)[0])-1, str(file.replace(".py", "")))
 
     return classes
 
