@@ -1,5 +1,5 @@
 # advent-of-code 🎄💻
 
-My solutions for Advent of Code challenges.
-Every December — when i remember, and when i’m free enough — i dive into these engaging puzzles not just for fun, but to level up my programming skills.
-I use this as a playground to explore new languages, tools, and technologies, all while embracing the spirit of continuous learning.
+Not just challenges or funny puzzles, but my annual chance to improve my own programming skills.
+I noticed advent-of-code in its first year of living, when i was just a 14-year-old newbie programmer, and i loved it at once.
+Now i'm officially into the adults world and i still enjoy solving their puzzles - whenever i rembember of them - but using it as the opportunity to get-in-touch with new technologies, programming languages and algorithms.
