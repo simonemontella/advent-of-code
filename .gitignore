@@ -2,3 +2,5 @@ solutions/__pycache__
 solutions/__init__.py
 .vscode
 .gitattributes
+target/
+Cargo.lock
