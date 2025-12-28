@@ -22,10 +22,11 @@ fn run_day(day: &dyn Day) {
 
     println!("=== {}: {} ===", day.number(), day.name());
     println!(
-        "Test (1): {}  (2): {}",
+        "++ Test (P1): {} | (P2): {} ++",
         day.part1(&test_input),
         day.part2(&test_input)
     );
+    day.test(&test_input);
     println!("Part 1: {}", day.part1(&input));
     println!("Part 2: {}", day.part2(&input));
     println!();
